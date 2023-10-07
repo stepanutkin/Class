@@ -5,23 +5,23 @@ class Calculator {
  private:
 	double num1, num2;
  public:
-	 double add(double x, double y) {
-		 return x + y;
+	 double add() {
+		 return num1 + num2;
 	 }
-	 double multiply(double x, double y) {
-		 return x * y;
+	 double multiply() {
+		 return num1 * num2;
 	 }
-	 double subtract_1_2(double x, double y) {
-		 return x - y;
+	 double subtract_1_2() {
+		 return num1-num2;
 		 }
-	 double subtract_2_1(double x, double y) {
-		 return y - x;
+	 double subtract_2_1() {
+		 return num2-num1;
 	 }
-	 double divide_1_2(double x, double y) {
-		 return x / y;
+	 double divide_1_2() {
+		 return num1 / num2;
 	 }
-	 double divide_2_1(double x, double y) {
-		 return y / x;
+	 double divide_2_1() {
+		 return num2 / num1;
 	 }
 
 	 bool set_num1(double num1) {
@@ -74,12 +74,12 @@ int main() {
 			std::cin >> num2;
 		}
 
-		std::cout << "num1 + num2 = " << calculator.add(num1, num2) << std::endl;
-		std::cout << "num1 - num2 = " << calculator.subtract_1_2(num1, num2) << std::endl;
-		std::cout << "num2 - num1 = " << calculator.subtract_2_1(num1, num2) << std::endl;
-		std::cout << "num1 * num2 = " << calculator.multiply(num1, num2) << std::endl;
-		std::cout << "num1 / num2 = " << calculator.divide_1_2(num1, num2) << std::endl;
-		std::cout << "num2 / num1 = " << calculator.divide_2_1(num1, num2) << std::endl;
+		std::cout << "num1 + num2 = " << calculator.add() << std::endl;
+		std::cout << "num1 - num2 = " << calculator.subtract_1_2() << std::endl;
+		std::cout << "num2 - num1 = " << calculator.subtract_2_1() << std::endl;
+		std::cout << "num1 * num2 = " << calculator.multiply() << std::endl;
+		std::cout << "num1 / num2 = " << calculator.divide_1_2() << std::endl;
+		std::cout << "num2 / num1 = " << calculator.divide_2_1() << std::endl;
 	}
 		
 
